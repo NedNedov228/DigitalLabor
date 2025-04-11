@@ -1,7 +1,7 @@
 /*
  * Aufgabe_1_2.S
  *
- * SoSe 2024
+ * SoSe 2025
  *
  *  Created on: <$Date>
  *      Author: <$Name>
@@ -15,7 +15,7 @@ main:
 
 // A ---------
 mov r0, #1 
-ldr r1, =4294967295    
+mov r1, #0xffffffff    
 add r2, r0, r1
 
 //// B ---------

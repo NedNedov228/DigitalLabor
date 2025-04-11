@@ -1,7 +1,7 @@
 /*
  * Aufgabe_1_4.S
  *
- * SoSe 2024
+ * SoSe 2025
  *
  *  Created on: <$Date>
  *      Author: <$Name>
