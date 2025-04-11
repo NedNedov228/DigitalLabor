@@ -15,7 +15,7 @@
 .global main /* Specify global symbol */
 main:
 
-    ldr r0, =0xfff         // Load x
+    ldr r0, =0xfff     // Load x
     ldr r1, =1         // Load Schwelle
     cmp r0, r1         // Compare x und Schwelle
     bgt set_255        // if x > Schwelle, goto set_255
@@ -26,11 +26,11 @@ set_255:
 end:
 
 
-    //mov r0, #0
-    //mov r1, #1
-    //cmp r0, r1         
-    //movle r0, #0       
-    //movgt r0, #255
+    //mov r0, #0      // Load x
+    //mov r1, #1      // Load Schwelle
+    //cmp r0, r1      // Compare x und Schwelle     
+    //movle r0, #0    // r0 = 0 if x<=Schwelle    
+    //movgt r0, #255  // else r0 = 255
 
 stop:
 	nop
