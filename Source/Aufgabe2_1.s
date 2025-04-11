@@ -45,7 +45,7 @@ main:
 // ===== breakfast mask =====
 .equ breakfast_bm,  (food_bm | milk_bm | peanut_bm | lemon_bm)
 
-// ===== menu preparation =====
+
 // r0: standard breakfast
 ldr r0, =breakfast_bm
 
@@ -66,8 +66,8 @@ orr r3, r3, #(milk_bm << 16)  // double milk in high bits
 // r4: vegan (no butter, milk → wine)
 ldr r4, =breakfast_bm
 ldr r5, =(butter_bm | milk_bm)
-bic r4, r4, r5  // remove butter and milk
-orr r4, r4, #wine_bm                // add wine
+bic r4, r4, r5                // remove butter and milk
+orr r4, r4, #wine_bm          // add wine
 
 stop:
 	nop

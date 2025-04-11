@@ -13,7 +13,7 @@
 .global main /* Specify global symbol */
 main:
     
-    mov r1, #22
+    mov r0, #22
     mov r2, #25
 
       // r0:r1 + r2:r3 → r4:r5, overflow in r6

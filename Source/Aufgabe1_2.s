@@ -14,20 +14,19 @@
 main:
 
 // A ---------
-mov r0, #1 
-mov r1, #0xffffffff    
-add r2, r0, r1
+//mov r0, #1 
+//mov r1, #0xffffffff    
+//add r2, r0, r1
 
 //// B ---------
-//ldr r0, =-12
-//ldr r1, =-12
-//ldr r2, =-12
-//ldr r3, =-12
-//ldr r4, =-12
 
-//// C ---------
-//ldr r0, =0x80000000
-//add r1, r0, r0 
+mov r0, #1
+mov r1, #~0 
+add r2, r0, r1
+
+// C ---------
+mov r0, #0x80000000
+add r1, r0, r0 
 
 stop:
 	nop

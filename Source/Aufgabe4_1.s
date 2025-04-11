@@ -13,7 +13,6 @@
 .global main /* Specify global symbol */
 main:
 
-
 stop:
 	nop
 	bal stop
