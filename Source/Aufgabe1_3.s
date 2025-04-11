@@ -16,6 +16,7 @@
 main:
 
     ldr r0, =0xfff     // r0 = x
+    mov r1, #2
     cmp r0, r1         // Compare x und Schwelle
     bgt set_255        // if x > Schwelle, goto set_255
     mov r0, #0         // else set r0 = 0
